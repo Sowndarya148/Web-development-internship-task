@@ -1,0 +1,263 @@
+/* Reset and global styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-bg: #f9f8f5;
+    --color: #2c5191;
+}
+
+.dark {
+    --primary-bg: #273746;
+    --color: #fff;
+}
+
+body {
+    background: var(--primary-bg);
+    transition: all 0.6s ease-in-out;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.container h1
+{
+    color: var(--color);
+}
+
+header {
+    padding: 1rem;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.logo h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 1.2rem;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: var(--color);
+    font-weight: 600;
+}
+
+main section {
+    padding: 4rem 0;
+}
+
+.showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.showcase img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.right-side-content img {
+    width: 100%;
+    height: auto;
+    max-width: 600px; 
+}
+
+
+.showcase h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--color);
+    line-height: 3.5rem;
+}
+
+.showcase p {
+    font-size: 1.2rem;
+    padding: 2rem 0;
+    line-height: 2.5rem;
+    color: var(--color);
+}
+
+.showcase button {
+    display: block;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.6rem 2rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    background: var(--color);
+    color: var(--primary-bg);
+}
+
+.showcase button:hover {
+    opacity: 0.8;
+}
+
+.card-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 2rem;
+    padding: 2rem 0;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For IE and Edge */
+    scroll-behavior: smooth;
+}
+
+.card-slider::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.card {
+    background: var(--primary-bg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 0 0 auto;
+    width: 300px; /* Fixed width for each card */
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px; /* Adjust height to maintain consistency */
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    color: var(--color);
+    margin-bottom: 0.5rem;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: var(--color);
+}
+
+.about-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    color: var(--color);
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: var(--color);
+}
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 2.5rem;
+    color: var(--color);
+    margin-bottom: 1rem;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: var(--color);
+}
+
+.contact-section .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.contact-section .social-icons i {
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--color);
+}
+
+.below_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.social_icons {
+    display: flex;
+    align-items: center;
+}
+
+.social_icons i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.6rem;
+    margin: 0 0.5rem;
+    color: var(--color);
+}
+
+.dark_mode i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.6rem;
+    color: var(--color);
+}
